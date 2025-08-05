@@ -1,0 +1,129 @@
+.user-votes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #e85dec;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    color: white;
+}
+
+.user-votes .left-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* full width for children */
+    width: 20vw;
+    height: 100vh;
+    background-color: #920f96;
+    padding: 1rem;
+    box-sizing: border-box;
+    gap: 1rem;
+}
+
+.user-votes .left-bar .vote-list {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    gap: 0.5rem;
+}
+
+.user-votes .left-bar .bottom-button {
+    flex-shrink: 0;
+    margin-top: 1rem;
+    text-align: center;
+    background-color: #e85dec;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+.user-votes .left-bar .bottom-button:hover {
+    background-color: #c14ad0; /* highlight on hover */
+    cursor: pointer;
+}
+
+.user-votes .left-bar .vote-name {
+    background-color: #e85dec;
+    padding: 0.75rem 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-align: center;
+}
+
+.user-votes .left-bar .vote-name:hover {
+    background-color: #c14ad0;
+}
+
+
+.user-votes .right-container {
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: center;     /* centers vertically */
+    box-sizing: border-box;
+}
+
+.user-votes .right-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    height: 90vh;
+    background-color: #920f96;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.user-votes .right-bar > div ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem; /* vertical and horizontal gaps */
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.user-votes .right-bar > div ul li {
+    white-space: nowrap;
+    background-color: #c14ad0;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.title-with-copy {
+    display: flex;
+    align-items: center;
+}
+
+.title-with-copy svg {
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.title-with-copy svg:hover {
+    color: #8a2be2; /* or any highlight color */
+}
+
+.user-votes .logout-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: white;
+    transition: color 0.2s ease;
+    z-index: 1000;
+}
+
+.user-votes .logout-icon:hover {
+    color: #c14ad0; /* highlight on hover */
+}
+
+

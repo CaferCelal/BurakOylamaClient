@@ -1,0 +1,40 @@
+.public-vote-container {
+    display: flex;
+    flex-direction: row;
+    padding: 5rem;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #e85dec;
+    overflow: hidden;
+    justify-content: center;  /* center items */
+    align-items: center;      /* vertical center */
+    gap: 2rem;
+}
+
+.public-vote-container .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+    height: 85vh;
+    background-color: #920f96;
+    margin-right: 1rem;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.public-vote-container .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40vw;
+    height: 85vh;
+    background-color: #920f96;
+    margin-left: 1rem;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+
